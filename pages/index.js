@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import Link from 'next/link'
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
@@ -11,11 +10,9 @@ import bucket from '../public/bucket.png'
 import estore from '../public/scam-shop.png'
 import { useState } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  console.log(darkMode)
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -51,7 +48,7 @@ export default function Home() {
           <div className=' text-center'>
             <h3 className=' text-3xl py-1 dark:text-white '> My Projects </h3>
           </div>
-          <div className='lg:flex gap-10'>
+          <div className='xl:flex gap-10 '>
             <div className=' text-center bg-gray-200 shadow-lg p-10 rounded-xl my-10 dark:bg-gray-600'>
               <Image src={blog} className='rounded-xl' alt='blog' />
               <h3 className=' text-lg font-medium pt-8 pb-2  text-teal-600 dark:text-teal-400' >NT,HE</h3>
@@ -113,6 +110,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+        <section>
+          
         </section>
       </main>
       <footer className=' text-center bg-gray-100  dark:bg-gray-900 '>
