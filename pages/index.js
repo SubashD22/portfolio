@@ -28,7 +28,9 @@ export default function Home() {
             <ul className=' flex items-center'>
               <li>{!darkMode ? <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=' cursor-pointer text-2xl' /> :
                 <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className=' cursor-pointer text-2xl dark:text-white' />}</li>
-              <li><Link href='#' className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'>Resume</Link></li>
+              <li><Link href='/Subash-Resume.pdf' 
+               target='_blank' rel='noopener noreferrer'
+               className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'>Resume</Link></li>
             </ul>
           </nav>
           <div className=' text-center p-10'>
@@ -49,7 +51,7 @@ export default function Home() {
             <h3 className=' text-3xl py-1 dark:text-white '> My Projects </h3>
           </div>
           <div className='xl:flex gap-10 '>
-            <div className=' text-center bg-gray-200 shadow-lg p-10 rounded-xl my-10 dark:bg-gray-600'>
+            <div className=' text-center bg-gray-200 shadow-lg p-5 rounded-xl my-10 dark:bg-gray-600 sm:p-10'>
               <Image src={blog} className='rounded-xl' alt='blog' />
               <h3 className=' text-lg font-medium pt-8 pb-2  text-teal-600 dark:text-teal-400' >NT,HE</h3>
               <p className=' py-2 dark:text-gray-200'>
@@ -69,27 +71,8 @@ export default function Home() {
                 <Link href='https://github.com/SubashD22/ntheblog' target='_blank' className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md'>Code</Link>
               </div>
             </div>
-            <div className=' text-center bg-gray-200 shadow-lg p-10 rounded-xl my-10 dark:bg-gray-600'>
-              <Image src={estore} className='rounded-xl' alt='e-commerce' />
-              <h3 className=' text-lg font-medium pt-8 pb-2  text-teal-600 dark:text-teal-400' >SCAM SHOP</h3>
-              <p className=' py-2 dark:text-gray-200'>
-                An E-Commerce Store built using NextJs for the frontend and NodeJs for the backend. It has persistant cart functionality using localstorage. Stripe for payment.
-              </p>
-              <h4 className=' py-4 text-teal-600 dark:text-teal-400'>Tools used</h4>
-              <div className='flex flex-wrap gap-10 place-content-center'>
-                <SiJavascript className=' text-2xl  dark:text-white ' />
-                <SiNextdotjs className=' text-2xl  dark:text-white ' />
-                <SiCss3 className=' text-2xl  dark:text-white ' />
-                <FaCcStripe className=' text-2xl  dark:text-white ' />
-                <FaNodeJs className=' text-2xl  dark:text-white ' />
-                <SiMongodb className=' text-2xl  dark:text-white ' />
-              </div>
-              <div className='flex gap-2 place-content-center pt-8 justify-around'>
-                <Link href='https://scam-shop.vercel.app/' target='_blank' className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md'>Live</Link>
-                <Link href='https://github.com/SubashD22/scam-shop-frontend' target='_blank' className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md'>Code</Link>
-              </div>
-            </div>
-            <div className=' text-center bg-gray-200 shadow-lg p-10 rounded-xl my-10 dark:bg-gray-600'>
+            
+            <div className=' text-center bg-gray-200 shadow-lg p-5 rounded-xl my-10 dark:bg-gray-600 sm:p-10'>
               <Image src={bucket} className='rounded-xl' alt='bucket-app' />
               <h3 className=' text-lg font-medium pt-8 pb-2  text-teal-600 dark:text-teal-400' >BUCKET</h3>
               <p className=' py-2 dark:text-gray-200'>
@@ -107,6 +90,26 @@ export default function Home() {
               <div className='flex gap-2 place-content-center pt-8 justify-around'>
                 <Link href='https://bucket-ebon.vercel.app/' target='_blank' className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md '>Live</Link>
                 <Link href='https://github.com/SubashD22/Bucket' target='_blank' className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md '>Code</Link>
+              </div>
+            </div>
+            <div className=' text-center bg-gray-200 shadow-lg p-5 rounded-xl my-10 dark:bg-gray-600 sm:p-10'>
+              <Image src={estore} className='rounded-xl' alt='e-commerce' />
+              <h3 className=' text-lg font-medium pt-8 pb-2  text-teal-600 dark:text-teal-400' >SCAM SHOP</h3>
+              <p className=' py-2 dark:text-gray-200'>
+                An E-Commerce Store built using NextJs for the frontend and NodeJs for the backend. It has persistant cart functionality using localstorage. Stripe for payment.
+              </p>
+              <h4 className=' py-4 text-teal-600 dark:text-teal-400'>Tools used</h4>
+              <div className='flex flex-wrap gap-10 place-content-center'>
+                <SiJavascript className=' text-2xl  dark:text-white ' />
+                <SiNextdotjs className=' text-2xl  dark:text-white ' />
+                <SiCss3 className=' text-2xl  dark:text-white ' />
+                <FaCcStripe className=' text-2xl  dark:text-white ' />
+                <FaNodeJs className=' text-2xl  dark:text-white ' />
+                <SiMongodb className=' text-2xl  dark:text-white ' />
+              </div>
+              <div className='flex gap-2 place-content-center pt-8 justify-around'>
+                <Link href='https://scam-shop.vercel.app/' target='_blank' className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md'>Live</Link>
+                <Link href='https://github.com/SubashD22/scam-shop-frontend' target='_blank' className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md'>Code</Link>
               </div>
             </div>
           </div>
