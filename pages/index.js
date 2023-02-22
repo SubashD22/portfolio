@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <main className=' bg-gray-100 h-max px-10 md:px-20 lg:px-40 dark:bg-gray-900 overflow-auto'>
         <section >
-          <nav className=' py-10 mb-12 flex justify-between dark:text-white"'>
+          <nav className=' py-10 mb-5 flex justify-between dark:text-white"'>
             <h1 className=' text-xl dark:text-white'>My Portfolio</h1>
             <ul className=' flex items-center'>
               <li>{!darkMode ? <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=' cursor-pointer text-2xl' /> :
@@ -33,10 +33,10 @@ export default function Home() {
                className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'>Resume</Link></li>
             </ul>
           </nav>
-          <div className=' text-center p-10'>
+          <div className=' text-center py-10 sm:px-10'>
             <h2 className=' text-5xl text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Subash</h2>
             <h3 className=' text-2xl py-2 md:text-3xl dark:text-white'>Full stack webdeveloper</h3>
-            <p className=' text-md py-5 leading-8 text-gray-800 md:text-xl max-w-2xl mx-auto dark:text-gray-200'>
+            <p className=' text-md py-5 leading-8 text-gray-800 md:text-xl max-w-2xl mx-auto dark:text-gray-200 text-center'>
               I am an internet taught Web Developer who can build websites with my knowledge
               in Javascript, Node.js, Express, MongoDB, React, and Next.js.
               I'm passionate about strengthening my knowledge, learning new technologies and building cool web apps.
