@@ -55,7 +55,7 @@ export default function Home() {
               <Image src={blog} className='rounded-xl' alt='blog' />
               <h3 className=' text-lg font-medium pt-8 pb-2  text-teal-600 dark:text-teal-400' >NT,HE</h3>
               <p className=' py-2 dark:text-gray-200'>
-                A Simple blog with CRUD functionality with JWT for authentication and authorization, cloudinary for image storage and QuillJS for rich text editor.
+                A Simple blog with CRUD functionality with JWT for authentication and authorization, Cloudinary for image storage and QuillJS for a rich text editor.
               </p>
               <h4 className=' py-4 text-teal-600 dark:text-teal-400'>Tools used</h4>
               <div className='flex flex-wrap gap-10 place-content-center'>
@@ -76,7 +76,7 @@ export default function Home() {
               <Image src={bucket} className='rounded-xl' alt='bucket-app' />
               <h3 className=' text-lg font-medium pt-8 pb-2  text-teal-600 dark:text-teal-400' >BUCKET</h3>
               <p className=' py-2 dark:text-gray-200'>
-                A bucket list app with Firebase+MongoDb for authentication, ability to search data from different API, react-beautiful-dnd to reorder list by drag and drop, and MaterialUI of UI
+                A bucket list app with Firebase+MongoDb for authentication, the ability to search data from different APIs, react-beautiful-dnd to reorder the list by drag and drop, and MaterialUI of UI
               </p>
               <h4 className=' py-4 text-teal-600  dark:text-teal-400'>Tools used</h4>
               <div className='flex flex-wrap gap-10 place-content-center'>
@@ -96,7 +96,7 @@ export default function Home() {
               <Image src={estore} className='rounded-xl' alt='e-commerce' />
               <h3 className=' text-lg font-medium pt-8 pb-2  text-teal-600 dark:text-teal-400' >SCAM SHOP</h3>
               <p className=' py-2 dark:text-gray-200'>
-                An E-Commerce Store built using NextJs for the frontend and NodeJs for the backend. It has persistant cart functionality using localstorage. Stripe for payment.
+                An E-Commerce Store built using NextJs for the frontend and NodeJs for the backend. It has persistent cart functionality using localstorage, and Stripe for payment.
               </p>
               <h4 className=' py-4 text-teal-600 dark:text-teal-400'>Tools used</h4>
               <div className='flex flex-wrap gap-10 place-content-center'>
